@@ -1,0 +1,148 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/oauth/access_token?access_token=EAAJGNRf43X4BAJG8bP6nTnrxCFTbRMGuffkdaEjdNYjVXhlSK5lEhrTy3yOZCTUF0TTfgX3ZAqCnWiyRWQsHUBdJO6j5EKqxbbxW1g0G3herZBgjMetXC8SRdYufQymmZAFZAcayKcrGZA36VajlZBizX9y1FinDPYZD&client_id=640143802817918&client_secret=572cc7cfb11b4d1a120a682975245015&fb_exchange_token=EAAJGNRf43X4BAJG8bP6nTnrxCFTbRMGuffkdaEjdNYjVXhlSK5lEhrTy3yOZCTUF0TTfgX3ZAqCnWiyRWQsHUBdJO6j5EKqxbbxW1g0G3herZBgjMetXC8SRdYufQymmZAFZAcayKcrGZA36VajlZBizX9y1FinDPYZD&grant_type=fb_exchange_token
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.0
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - text/plain; charset=UTF-8
+      X-Fb-Trace-Id:
+      - BQOjRqBK2kB
+      X-Fb-Rev:
+      - '2358911'
+      X-Fb-Debug:
+      - pTFCYaYb8XIC6unWme2AnpmV/XLol9tBX1gAVwJynJhGlOfP7UQYs0UV6XeoYL9p/3orpzNLCWzMXCnp3hoe2A==
+      Date:
+      - Thu, 26 May 2016 18:36:13 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '182'
+    body:
+      encoding: UTF-8
+      string: access_token=EAAJGNRf43X4BAPi1qF8nPE7t4pSlm8YU70YBxZCfLuE2qKlHfwGMqryg1guanOZCxgJsomdCB1ZARJP27ZAp6dL3FZCZBkeQeXSuAL2511JaAlCmeXIRTeR15yyuZCFYNAZB859V0ksicvEJEEBOxmPr&expires=5117704
+    http_version: 
+  recorded_at: Thu, 26 May 2016 18:36:13 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/me/picture?access_token=EAAJGNRf43X4BAPi1qF8nPE7t4pSlm8YU70YBxZCfLuE2qKlHfwGMqryg1guanOZCxgJsomdCB1ZARJP27ZAp6dL3FZCZBkeQeXSuAL2511JaAlCmeXIRTeR15yyuZCFYNAZB859V0ksicvEJEEBOxmPr
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Location:
+      - https://scontent.xx.fbcdn.net/v/t1.0-1/c8.0.50.50/p50x50/1743534_10202436391728462_590702620_n.jpg?oh=4ab4307adb9fd036767e831cccd13d27&oe=57E6663F
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.6
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - image/jpeg
+      X-Fb-Trace-Id:
+      - CoZiOrYV6Qq
+      X-Fb-Rev:
+      - '2358911'
+      X-Fb-Debug:
+      - wllGjg5qbrRO52VRdsr716/fTbm1u+79mO06kexW+hrMmsXv92wjjgiAtb+mK3e0dC+LRgj+7GMNELGZP2j6HQ==
+      Date:
+      - Thu, 26 May 2016 18:36:43 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 26 May 2016 18:36:43 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/me/picture?access_token=EAAJGNRf43X4BAPi1qF8nPE7t4pSlm8YU70YBxZCfLuE2qKlHfwGMqryg1guanOZCxgJsomdCB1ZARJP27ZAp6dL3FZCZBkeQeXSuAL2511JaAlCmeXIRTeR15yyuZCFYNAZB859V0ksicvEJEEBOxmPr
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Pragma:
+      - no-cache
+      Location:
+      - https://scontent.xx.fbcdn.net/v/t1.0-1/c8.0.50.50/p50x50/1743534_10202436391728462_590702620_n.jpg?oh=4ab4307adb9fd036767e831cccd13d27&oe=57E6663F
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Facebook-Api-Version:
+      - v2.6
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Content-Type:
+      - image/jpeg
+      X-Fb-Trace-Id:
+      - AtWjUVYLOe8
+      X-Fb-Rev:
+      - '2358911'
+      X-Fb-Debug:
+      - 0k3B5FUM5ON0YECkGxK69AEPW1hXUnbiXyhfAmQwCwmIfzefh1TySN5+PAEbRhC1rvfmzFMzOkPKrAAe7C/tow==
+      Date:
+      - Thu, 26 May 2016 18:37:59 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 26 May 2016 18:37:59 GMT
+recorded_with: VCR 3.0.3
