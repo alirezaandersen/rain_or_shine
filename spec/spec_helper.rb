@@ -9,7 +9,6 @@ VCR.configure do |c|
   c.ignore_request do |request|
     URI(request.uri).port == 3000
   end
-  c.cassette_library_dir = 'cassettes'
 end
 
 
