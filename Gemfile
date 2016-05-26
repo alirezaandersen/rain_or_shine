@@ -13,9 +13,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'faker'
 gem 'omniauth-facebook'
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'simplecov', :require => false, :group => :test
 gem 'factory_girl_rails'
+gem 'faraday'
 
 
 group :development, :test do
@@ -27,6 +28,7 @@ group :development, :test do
   gem 'mocha'
   gem 'shoulda-matchers'
   gem 'figaro'
+  gem 'pry-rails'
 end
 
 group :development do

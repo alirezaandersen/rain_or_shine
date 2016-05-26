@@ -1,0 +1,5 @@
+class UndergroundWeatherService < OpenStruct
+
+
+
+end 

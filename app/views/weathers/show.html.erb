@@ -1,0 +1,16 @@
+Your Five day weather for <%= @city %><br>
+
+
+<ul>
+<li><%= @five_day_forecast[0] %><br></li>
+
+<li><%= @five_day_forecast[7] %><br></li>
+
+<li><%= @five_day_forecast[13] %><br></li>
+
+<li><%= @five_day_forecast[26] %><br></li>
+
+<li><%= @five_day_forecast[33] %><br></li>
+</ul>
+
+<%= link_to "click here to share on facebook", update_timeline_path(@city) %>
