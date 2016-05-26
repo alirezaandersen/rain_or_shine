@@ -10,8 +10,7 @@ class ApplicationController < ActionController::Base
   end
 
   def geo_location
-    weather = UndergroundWeatherService.new
-    weather.geo_by_location
+    UndergroundWeather.geo_by_location
   end
 
   def profile_picture

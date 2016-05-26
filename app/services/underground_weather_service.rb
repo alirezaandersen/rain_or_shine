@@ -36,28 +36,10 @@ class UndergroundWeatherService
     json_geo = json_request("geolookup/q/autoip.json")
   end
 
-  def geo_by_location
-    geo_zip = conditions_by_geolookup[:location][:zip]
-    condition_by_zip(geo_zip)
-  end
+  # def geo_by_location
+  #   geo_zip = conditions_by_geolookup[:location][:zip]
+  #   condition_by_zip(geo_zip)
+  # end
 
-  def conditions_by_cities(cities)
-    #need to ensure that cities are accurate
-  end
 
-  def conditions2(cities)
-    cities_weather = cities.map do |city|
-      results = @connection.get("conditions/q/#{"CO"}/#{"Denver"}.json")
-      [city, parse(results)["conditions"]]
-    end
-    # @connection. = #{} of three parks get "condition/q/#{"CO"}/#{"Denver"}.json"
-  end
-
-  def state
-
-  end
-
-  def city
-
-  end
 end
