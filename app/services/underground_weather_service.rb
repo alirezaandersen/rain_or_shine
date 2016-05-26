@@ -5,7 +5,7 @@ class UndergroundWeatherService
     @connection.headers["Authorization"] = ENV["UNDERGROUND_APP_KEY"]
   end
 
-  def test
+  def test_api
     #http://api.wunderground.com/api/f9bc7bc5873d396b/conditions/q/CA/San_Francisco.json
     json_request("conditions/q/CA/San_Francisco.json")
   end
@@ -27,7 +27,7 @@ class UndergroundWeatherService
 
   def conditions_by_zipcodes(*zipcodes)
     zipcodes.map do |zip|
-      #sanitize and validate zip
+      #need to sanitize and validate zip
       [zip.to_s, condition_by_zip(zip)]
     end.to_h
   end
@@ -35,11 +35,4 @@ class UndergroundWeatherService
   def conditions_by_geolookup
     json_geo = json_request("geolookup/q/autoip.json")
   end
-
-  # def geo_by_location
-  #   geo_zip = conditions_by_geolookup[:location][:zip]
-  #   condition_by_zip(geo_zip)
-  # end
-
-
 end

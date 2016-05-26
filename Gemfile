@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 gem 'pg', '~> 0.15'
@@ -17,17 +16,15 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'simplecov', :require => false, :group => :test
 gem 'factory_girl_rails'
 gem 'faraday'
-
+gem 'figaro'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
   gem 'mocha'
   gem 'shoulda-matchers'
-  gem 'figaro'
   gem 'pry-rails'
 end
 
@@ -40,4 +37,7 @@ end
 
 group :test do
   gem 'database_cleaner'
+  gem 'vcr'
+  gem 'webmock'
+  gem 'rspec-rails'
 end
