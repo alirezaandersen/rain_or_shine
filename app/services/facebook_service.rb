@@ -5,28 +5,12 @@ class FacebookService
 
   def initialize(access_token)
       @access_token = access_token
-      long_lived_access_token = implemented_long_lived_access_token
+      long_lived_access_token = implement_long_lived_access_token
       request_options = {params: {"access_token": long_lived_access_token} }
       @connection = Faraday.new("https://graph.facebook.com/", request_options)
   end
 
-  # def initialize(access_token)
-  #   set_enduring_access_token(access_token)
-  #   @connection = Faraday.new("https://graph.facebook.com/", @request_options)
-  # end
-
-  def set_enduring_access_token(access_token)
-    long_lived_access_token = implemented_long_lived_access_token
-
-        response = request_long_lived_access_token
-    enduring_access_token = URI.decode_www_form(response.body).to_h.fetch('access_token',nil)
-
-    request_options = {params: {"access_token": enduring_access_token} }
-
-  end
-
-
-  def implemented_long_lived_access_token
+  def implement_long_lived_access_token
     response = request_long_lived_access_token
     URI.decode_www_form(response.body).to_h.fetch('access_token',nil)
   end
