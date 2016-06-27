@@ -17,6 +17,11 @@ gem 'simplecov', :require => false, :group => :test
 gem 'factory_girl_rails'
 gem 'faraday'
 gem 'figaro'
+gem 'responders', '~> 2.0'
+gem 'rails_12factor', group: :production
+gem 'active_model_serializers', github: "rails-api/active_model_serializers"
+gem 'will_paginate'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -26,6 +31,7 @@ group :development, :test do
   gem 'mocha'
   gem 'shoulda-matchers'
   gem 'pry-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do

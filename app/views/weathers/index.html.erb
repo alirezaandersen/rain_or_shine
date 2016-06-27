@@ -1,9 +1,3 @@
-<div class="image">
-
-      <img src="images/images.jpg" alt="" />
-
-      <% @conditions.each do |condition| %>
-      City: <%= condition.city %> Temp: <%= condition.temp %>
-      <% end %>
-
-</div>
+<% @conditions.each do |condition| %>
+  City: <%= condition.city %> Temp: <%= condition.temp %>
+<% end %>

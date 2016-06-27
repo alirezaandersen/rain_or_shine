@@ -17,7 +17,6 @@ class WeathersController <  ApplicationController
 
   def show
      @city = params[:id]
-    #  @weather = OpenWeather.new
      @five_day_forecast = OpenWeather.five_day_forecast(@city)
   end
 end
